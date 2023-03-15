@@ -13,7 +13,6 @@
 def int_func(*words):
     word = input("Вводим слово ")
     print(word.title())
-    return
 
 
 int_func()

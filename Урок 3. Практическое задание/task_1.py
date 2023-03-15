@@ -19,7 +19,7 @@ Process finished with exit code 0
 """
 
 
-def mor():
+def mor(x, y):
     try:
         x = int(input('Введите первое число:'))
         y = int(input('Введите второе число:'))
@@ -30,6 +30,8 @@ def mor():
         return res
 
 
-print(mor())
+a = int(input('Введите первое число:'))
+b = int(input('Введите второе число:'))
+print(mor(a, b))
 
 
