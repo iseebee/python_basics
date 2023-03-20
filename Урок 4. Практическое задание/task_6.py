@@ -12,3 +12,18 @@
 Во втором также необходимо предусмотреть условие,
 при котором повторение элементов списка будет прекращено.
 """
+
+
+from itertools import count, cycle
+
+for i in count(int(input('Введите целое число'))):
+    if i > 10:
+        break
+    print(i)
+
+c = 0
+for y in cycle('qwerty'):
+    if c > 10:
+        break
+    print(y)
+    c += 1
