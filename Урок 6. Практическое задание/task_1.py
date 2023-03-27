@@ -15,3 +15,30 @@
 
 Проверить работу примера, создав экземпляр и вызвав описанный метод.
 """
+
+from itertools import cycle
+import time
+
+
+class Trafficlight:
+    __color = ''
+
+    def running(self, turns):
+        tr_colors = ['Red', 'Yellow', 'Green']
+        i = 1
+        for el in cycle(tr_colors):
+            __color = el
+            print(__color)
+            i += 1
+            if __color == 'Red':
+                time.sleep(7)
+            elif __color == 'Yellow':
+                time.sleep(2)
+            elif __color == 'Green':
+                time.sleep(1)
+            if i > turns:
+                break
+
+
+tr_light = Trafficlight()
+tr_light.running(int(input('Введите кол-во переключений светофора: ')))
