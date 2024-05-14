@@ -8,3 +8,10 @@
 Иван Иванов 1846 года рождения, проживает в городе Москва,
 email: jackie@gmail.com, телефон: 01005321456
 """
+
+
+def hum_info(name, surname, b_year, city, email, phne):
+    print(f'{name} {surname} {b_year} года рождения, проживает в городе {city}, email: {email}, телефон: {phne}')
+
+
+hum_info(surname='Бомбадил', b_year='1846', name='Том', email='jackie@gmail.com', city='Москва', phne='01005321456')

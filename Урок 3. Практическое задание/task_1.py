@@ -17,3 +17,19 @@ Process finished with exit code 0
 
 Process finished with exit code 0
 """
+
+
+def mor(x, y):
+    try:
+        res = x / y
+    except ZeroDivisionError:
+        return 'Вы что? Пытаетесь делить на 0!'
+    else:
+        return res
+
+
+a = int(input('Введите первое число:'))
+b = int(input('Введите второе число:'))
+print(mor(a, b))
+
+
