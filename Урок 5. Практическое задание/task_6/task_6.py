@@ -5,3 +5,13 @@
                                         Физкультура:   —   30(пр)   —
 Пример словаря: {“Информатика”: 170, “Физика”: 40, “Физкультура”: 30}
 """
+
+
+amount_sum = {}
+with open("text6.txt", encoding='utf-8') as my_file:
+    a_str = my_file.readlines()
+for el in a_str:
+    amo_st = el.replace('(', ' ').split()
+    print(amo_st)
+    amount_sum[amo_st[0][:-1]] = sum(int(i) for i in amo_st if i.isdigit())
+print(amount_sum)
